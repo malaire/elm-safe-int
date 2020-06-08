@@ -1,0 +1,9 @@
+/benchmarks/elm-stuff
+/benchmarks/index.html
+/elm-stuff
+/tests/VerifyExamples
+docs.json
+notes
+run.sh
+*.sublime-project
+*.sublime-workspace
