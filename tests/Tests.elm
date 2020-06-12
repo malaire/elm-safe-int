@@ -369,7 +369,6 @@ testsForPow =
     [ TestInt "works for a*b > 2^32" 10 15 1000000000000000
     , TestMaybeInt "negative overflow" (Just -10) (Just 17) Nothing
     , TestMaybeInt "positive overflow" (Just 10) (Just 17) Nothing
-    , TestMaybeInt "0 ^ 0 = undefined" (Just 0) (Just 0) Nothing
     , TestMaybeInt "undefined ^ 0 = undefined" Nothing (Just 0) Nothing
     , TestMaybeInt "1 ^ undefined = undefined" (Just 1) Nothing Nothing
     ]
