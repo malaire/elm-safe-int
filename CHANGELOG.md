@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+_No unreleased changes worth mentioning._
+
 ## [1.0.0] - 2020-06-08
 ### Added
 - Everything. First public version.
