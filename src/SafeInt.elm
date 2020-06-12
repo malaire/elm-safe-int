@@ -269,6 +269,10 @@ below [`minValue`](#minValue) or above [`maxValue`](#maxValue).
 **Note:** Strange cases where argument is `NaN`, `-Infinity`, `+Infinity` or
 non-integer like `1234.5` are supported.
 
+**Note:** Behavior of `Int` for values below `-2^31` and above `2^31 - 1` is undefined in Elm.
+As of Elm 0.19.1 conversion from/to `Int` works for full [`SafeInt`](#SafeInt) range
+from [`minValue`](#minValue) to [`maxValue`](#maxValue), but this could change in the future.
+
 -}
 fromInt : Int -> SafeInt
 fromInt x =
@@ -288,6 +292,10 @@ new x =
 
 Return `Just value` if [`SafeInt`](#SafeInt) is defined,
 and `Nothing` if [`SafeInt`](#SafeInt) is [`undefined`](#undefined).
+
+**Note:** Behavior of `Int` for values below `-2^31` and above `2^31 - 1` is undefined in Elm.
+As of Elm 0.19.1 conversion from/to `Int` works for full [`SafeInt`](#SafeInt) range
+from [`minValue`](#minValue) to [`maxValue`](#maxValue), but this could change in the future.
 
 -}
 toInt : SafeInt -> Maybe Int

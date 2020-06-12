@@ -170,6 +170,10 @@ Behavior is undefined if
 **Note:** Unlike [`SafeInt.fromInt`](SafeInt#fromInt),
 this function does not allow non-integer argument.
 
+**Note:** Behavior of `Int` for values below `-2^31` and above `2^31 - 1` is undefined in Elm.
+As of Elm 0.19.1 conversion from/to `Int` works for full [`SafeInt`](SafeInt#SafeInt) range
+from [`minValue`](#minValue) to [`maxValue`](#maxValue), but this could change in the future.
+
 -}
 fromInt : Int -> Float
 fromInt x =
@@ -187,6 +191,10 @@ Behavior is undefined if
 
 **Note:** Unlike [`SafeInt.toInt`](SafeInt#toInt),
 return value is `Int` instead of `Maybe Int` as `Unchecked` functions don't support [`undefined`](SafeInt#undefined) value.
+
+**Note:** Behavior of `Int` for values below `-2^31` and above `2^31 - 1` is undefined in Elm.
+As of Elm 0.19.1 conversion from/to `Int` works for full [`SafeInt`](SafeInt#SafeInt) range
+from [`minValue`](#minValue) to [`maxValue`](#maxValue), but this could change in the future.
 
 -}
 toInt : Float -> Int

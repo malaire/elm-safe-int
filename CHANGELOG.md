@@ -1,8 +1,8 @@
 # Changelog
 
 ## [Unreleased]
-
-_No unreleased changes worth mentioning._
+### Documentation
+- Add note that behavior of `Int` outside 32-bit range is undefined.
 
 ## [1.0.0] - 2020-06-08
 ### Added
